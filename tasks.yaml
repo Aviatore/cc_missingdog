@@ -1,0 +1,57 @@
+complete-dog-repository:
+  title: Complete dog repository
+  description: >-
+    Implement all methods in the DogRepository class.
+  tags: [oop-1, csharp-1]
+  requirements:
+    get-all:
+      description:
+        csharp: >-
+          The `GetAllDogs()` method returns an `IEnumerable<Dog>` of all `Dog` instances (including null references) from provided data from `DataSource` class.
+    get-dog-by-id:
+      description:
+        csharp: >-
+          The `GetDogById()` method returns a specific `Dog` instance with given `Id`, if exists. If doesn't, returns `null`.
+    get-count-of-dogs-for-the-owner-od-dog-with-id:
+      description:
+        csharp: >-
+          The `GetCountOfDogsForTheOwnerOfDogWithId()` method returns the count of `Dog` instances which are assigned to an `Owner` of a `Dog` with a given `Id`.
+    get-owner-phone-by-dog-id:
+      description:
+        csharp: >-
+          The `GetOwnerPhoneNoByDogId()` method returns `PhoneNumber` of the `Dog` instance `Owner` with a given `Id`, if exists. If doesn't, returns a `string` "Missing data".
+    get-dogs-by-sociability:
+      description:
+        csharp: >-
+          The `GetDogsBySociability()` method returns an `IEnumerable<Dog>` of all `Dog` instances with a given `Sociability`.
+
+complete-owner-repository:
+  title: Complete owner repository
+  description: |-
+    Implement all methods in the OwnerRepository class.
+  tags: [oop-1, csharp-1]
+  requirements:
+    get-all:
+      description:
+        csharp: >-
+          The `GetAllOwners()` method returns an `IEnumerable<Owner>` of all `Owner` instances (including null references) from provided data from `DataSource` class.
+    get-owner-by-id:
+      description:
+        csharp: >-
+          The `GetOwnerById()` method returns a specific `Owner` instance with given `Id`, if exists. If doesn't, returns `null`.
+    get-count-of-dogs-of-specific-breed-this-owner-has:
+      description:
+        csharp: >-
+          The `GetCountOfDogsOfSpecificBreedThisOwnerHas()` method returns the count of 'Dog' instances of specific `Breed` that this `Owner` has.
+    count-average-activity-level-of-this-owners-dogs:
+      description:
+        csharp: >-
+          The `CountAverageActivityLevelOfThisOwnersDogs()` method thet returns the count an average `ActivityLevel` of all `Dog` instances that `Owner` with given `Id` has.
+    get-oldest-dog-of-this-owner:
+      description:
+        csharp: >-
+          The `GetOldestDogOfThisOwner()` method returns the oldest `Dog` instance of `Owner` with given `Id`, if exists. If doesn't, returns `null`.
+    count-dog-of-this-owner:
+      description:
+        csharp: >-
+          The `CountDogsOfThisOwner()` method that returns the count of `Dog` instances of `Owner` with given `Id`.
